@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap {
+  background: url("../img/invited-bg.png") no-repeat;
+  background-size: 100% ;
+  overflow: auto;
+}
+.column {
+  margin-top: 15.6rem;
+}
+.redPacketBox,
+.inviteBox {
+  float: left;
+  width: 5.68rem;
+  height: 3.92rem;
+  text-align: center;
+}
+.redPacketBox {
+  background: url("../img/monkey_frame.png") no-repeat;
+  background-size: 5.68rem 3.92rem;
+  margin-left: 1.52rem;
+  margin-right: 0.72rem;
+}
+.redPacketBox > img,
+.inviteBox > img {
+  width: 1.4rem;
+  height: 0.92rem;
+  margin-top: 0.32rem;
+}
+.redPacketBox p,
+.inviteBox p {
+  font-size: 0.56rem;
+}
+.redPacketBox p:nth-of-type(1) {
+  color: #ff4545;
+  font-weight: bold;
+}
+.redPacketBox p:nth-of-type(2) {
+  color: #fc1a1a;
+  font-size: 0.76rem;
+}
+.redPacketBox p:nth-of-type(2) em,
+.inviteBox p:nth-of-type(2) em {
+  font-size: 0.64rem;
+  font-style: normal;
+}
+.inviteBox {
+  background: url("../img/invite_frame.png") no-repeat;
+  background-size: 5.68rem 3.92rem;
+}
+.inviteBox p:nth-of-type(1) {
+  color: #ffb818;
+  font-weight: bold;
+}
+.inviteBox p:nth-of-type(2) {
+  color: #f4a900;
+  font-size: 0.76rem;
+}
+/*邀请按钮*/
+.btnBox {
+  margin-top: 1.24rem;
+  text-align: center;
+}
+.btnBox img {
+  width: 11.56rem;
+  height: 1.9rem;
+}
