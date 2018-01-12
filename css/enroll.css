@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap {
+  background: url("../img/enroll-bg.jpg") no-repeat;
+  background-size: 100% ;
+  overflow: auto;
+}
+.header {
+  width: 12.64rem;
+  height: 4.08rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  margin: 15.96rem auto 0.92rem;
+  box-shadow: 0 0 0.4rem #d99805;
+}
+.header p {
+  font-size: 0.4rem;
+  line-height: 0.6rem;
+  color: #fe9d23;
+  padding: 0.96rem 0.9rem 0;
+  text-align: justify;
+}
+/*注册信息*/
+#registry {
+  width: 12.64rem;
+  margin: 0 auto;
+}
+#registry input {
+  outline: none;
+  border: none;
+}
+#mobile {
+  width: 12.52rem;
+  height: 1.68rem;
+  border-radius: 0.2rem;
+  background: #ffffff url("../img/phone.png") no-repeat 0.6rem center;
+  background-size: 0.76rem 0.84rem;
+  text-indent: 3em;
+}
+#mesCode {
+  width: 7.72rem;
+  height: 1.68rem;
+  border-radius: 0.2rem;
+  margin-top: 0.76rem;
+  background: #ffffff url("../img/code.png") no-repeat 0.6rem center;
+  background-size: 0.76rem 0.84rem;
+  text-indent: 3em;
+}
+.mesBtn {
+  display: inline-block;
+  width: 4rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  background-color: #fa6220;
+  color: #fff;
+  font-size: 0.52rem;
+  border-radius: 0.12rem;
+  margin-left: 0.36rem;
+}
+.enrollBtn {
+  width: 12.7rem;
+  margin-top: 0.8rem;
+}
+::-webkit-input-placeholder {
+  color: #666;
+  font-size: 0.6rem;
+  text-indent: 3em;
+}
+#registry > p {
+  font-size: 0.4rem;
+  text-align: right;
+  color: #fff;
+}
+#registry > p span {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
+}
+/*邀请排行*/
+.ranking {
+  width: 12.34rem;
+  height: 31.28rem;
+  background: url("../img/rule_frame.png") no-repeat;
+  background-size: 12.34rem 31.28rem;
+  margin: 0.8rem auto 2.4rem;
+  text-align: center;
+}
+.rankTitle {
+  padding-top: 0.72rem;
+}
+.rankTitle img {
+  width: 4.36rem;
+}
+.rankingList {
+  margin-top: 0.48rem;
+}
+.rankingList li {
+  width: 11.16rem;
+  background-color: #eee;
+  border-radius: 0.6rem;
+  margin: 0 auto 0.36rem;
+}
+.leftSide {
+  float: left;
+  margin-left: 0.48rem;
+}
+.leftSide > img {
+  float: left;
+  width: 1.18rem;
+  height: 1.18rem;
+  margin: 0.3rem 0.4rem 0.3rem 0;
+}
+.companySide {
+  float: left;
+  margin-top: 0.32rem;
+}
+.company {
+  font-size: 0.52rem;
+  line-height: 0.52rem;
+  color: #333;
+}
+.inviteCount {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  margin-top: 0.12rem;
+  color: #666;
+}
+.rightSide {
+  float: right;
+  margin-right: 0.44rem;
+}
+.rightSide p {
+  font-size: 0.52rem;
+  line-height: 0.52rem;
+  color: #fe4646;
+  padding: 0.64rem 0;
+}
+/*邀请规则*/
+.invitingRules {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.invitingRules img {
+  width: 3.48rem;
+}
+.ruleList,
+.invitations {
+  padding: 0 0.8rem;
+}
+.ruleList h3,
+.invitations h3 {
+  font-size: 0.56rem;
+  color: #666;
+  text-align: left;
+  margin-bottom: 0.32rem;
+}
+.ruleList p,
+.invitations p {
+  font-size: 0.48rem;
+  line-height: 0.72rem;
+  color: #999;
+  text-align: justify;
+  /*text-indent: 2em;*/
+}
+.invitations {
+  margin-top: 0.32rem;
+}
+/*提示层*/
+.warn {
+  display: none;
+  width: 11.74rem;
+  height: 16.1rem;
+  background: url("../img/warn-bg.png") no-repeat;
+  background-size: 11.74rem 16.1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -5.88rem;
+  margin-top: -8rem;
+  z-index: 9992;
+}
+.warn h3 {
+  font-size: 0.68rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.28rem;
+}
+.solutions {
+  width: 8.6rem;
+  margin: 2.4rem auto 0;
+}
+.solutions > p:nth-of-type(1) {
+  margin-bottom: 0.4rem;
+}
+.solutions ul {
+  margin-bottom: 0.4rem;
+}
+.solutions p,
+.solutions ul li {
+  font-size: 0.6rem;
+  color: #999;
+  line-height: 0.92rem;
+}
+.solutions ul li {
+  background: url("../img/shape.png") no-repeat center left;
+  background-size: 0.42rem 0.42rem;
+  padding-left: 0.8rem;
+}
+.backBtn {
+  display: block;
+  width: 7.6rem;
+  height: 1.6rem;
+  border-radius: 1.6rem;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0);
+  margin: 2.28rem auto 0;
+  font-size: 0.84rem;
+  color: #fff;
+}
+/*遮罩*/
+.shade {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 9000;
+}
