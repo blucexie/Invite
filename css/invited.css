@@ -15,7 +15,7 @@ a {
   clear: both;
 }
 .wrap {
-  background: url("../img/invited-bg.png") no-repeat;
+  background: url("../img/invited-bg.jpg") no-repeat;
   background-size: 100% ;
   overflow: auto;
 }
@@ -78,4 +78,93 @@ a {
 .btnBox img {
   width: 11.56rem;
   height: 1.9rem;
+}
+/*邀请排行*/
+.ranking {
+  width: 12.34rem;
+  height: 31.28rem;
+  background: url("../img/rule_frame.png") no-repeat;
+  background-size: 12.34rem 31.28rem;
+  margin: 0.32rem auto 2.4rem;
+  text-align: center;
+}
+.rankTitle {
+  padding-top: 0.72rem;
+}
+.rankTitle img {
+  width: 4.36rem;
+}
+.rankingList {
+  margin-top: 0.48rem;
+}
+.rankingList li {
+  width: 11.16rem;
+  background-color: #eee;
+  border-radius: 0.6rem;
+  margin: 0 auto 0.36rem;
+}
+.leftSide {
+  float: left;
+  margin-left: 0.48rem;
+}
+.leftSide > img {
+  float: left;
+  width: 1.18rem;
+  height: 1.18rem;
+  margin: 0.3rem 0.4rem 0.3rem 0;
+}
+.companySide {
+  float: left;
+  margin-top: 0.32rem;
+}
+.company {
+  font-size: 0.52rem;
+  line-height: 0.52rem;
+  color: #333;
+}
+.inviteCount {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  margin-top: 0.12rem;
+  color: #666;
+}
+.rightSide {
+  float: right;
+  margin-right: 0.44rem;
+}
+.rightSide p {
+  font-size: 0.52rem;
+  line-height: 0.52rem;
+  color: #fe4646;
+  padding: 0.64rem 0;
+}
+/*邀请规则*/
+.invitingRules {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.invitingRules img {
+  width: 3.48rem;
+}
+.ruleList,
+.invitations {
+  padding: 0 0.8rem;
+}
+.ruleList h3,
+.invitations h3 {
+  font-size: 0.56rem;
+  color: #666;
+  text-align: left;
+  margin-bottom: 0.32rem;
+}
+.ruleList p,
+.invitations p {
+  font-size: 0.48rem;
+  line-height: 0.72rem;
+  color: #999;
+  text-align: justify;
+  text-indent: 2em;
+}
+.invitations {
+  margin-top: 0.12rem;
 }

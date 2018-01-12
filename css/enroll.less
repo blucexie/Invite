@@ -1,0 +1,246 @@
+@r:50rem;
+*{margin: 0;padding: 0}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap{
+  background: url("../img/enroll-bg.jpg")no-repeat;
+  background-size: 100% ;
+  overflow: auto;
+}
+.header{
+  width:632/@r;
+  height:204/@r;
+  background-color: #fff;
+  border-radius: 10/@r;
+  margin: 798/@r auto 46/@r;
+  box-shadow: 0 0 20/@r #d99805;
+
+}
+.header p{
+  font-size: 20/@r;
+  line-height:30/@r;
+  color: #fe9d23;
+  padding: 48/@r 45/@r 0;
+  text-align: justify;
+}
+/*注册信息*/
+#registry{
+  width:632/@r;
+  margin:  0 auto;
+}
+#registry input{
+  outline: none;
+  border: none;
+}
+
+#mobile{
+  width:626/@r;
+  height:84/@r;
+  border-radius: 10/@r;
+  background:#fff url("../img/phone.png")no-repeat 30/@r center ;
+  background-size:38/@r 42/@r ;
+  text-indent: 3em;
+}
+#mesCode{
+  width:386/@r;
+  height: 84/@r;
+  border-radius: 10/@r;
+  margin-top: 38/@r;
+  background:#fff url("../img/code.png")no-repeat 30/@r center ;
+  background-size:38/@r 42/@r ;
+  text-indent: 3em;
+}
+
+.mesBtn{
+  display: inline-block;
+  width:200/@r;
+  height: 60/@r;
+  line-height:60/@r;
+  text-align: center;
+  background-color: #fa6220;
+  color: #fff;
+  font-size: 26/@r;
+  border-radius: 6/@r;
+  margin-left: 18/@r;
+}
+.enrollBtn{
+  width:635/@r;
+  margin-top: 40/@r;
+}
+::-webkit-input-placeholder {
+  color: #666;
+  font-size: 30/@r;
+ text-indent: 3em;
+}
+#registry>p{
+  font-size: 20/@r;
+  text-align: right;
+  color: #fff;
+
+}
+#registry>p span{
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
+}
+
+/*邀请排行*/
+.ranking{
+  width:617/@r;
+  height:1564/@r;
+  background: url("../img/rule_frame.png")no-repeat;
+  background-size: 617/@r 1564/@r;
+  margin: 40/@r auto 120/@r;
+  text-align: center;
+}
+.rankTitle{
+  padding-top: 36/@r;
+}
+.rankTitle img{
+  width:218/@r;
+}
+.rankingList{
+  margin-top: 24/@r;
+}
+.rankingList li{
+  width:558/@r;
+  background-color: #eee;
+  border-radius: 30/@r;
+  margin: 0 auto 18/@r;
+}
+.leftSide{
+  float: left;
+  margin-left: 24/@r;
+}
+.leftSide>img{
+  float: left;
+  width: 59/@r;
+  height:59/@r;
+  margin: 15/@r 20/@r 15/@r 0;
+}
+.companySide{
+  float: left;
+  margin-top: 16/@r;
+}
+.company{
+  font-size: 26/@r;
+  line-height:26/@r;
+  color: #333;
+}
+.inviteCount{
+  font-size: 20/@r;
+  line-height:20/@r;
+  margin-top: 6/@r;
+  color: #666;
+}
+.rightSide{
+  float: right;
+  margin-right: 22/@r;
+}
+.rightSide p{
+  font-size: 26/@r;
+  line-height:26/@r;
+  color: #fe4646;
+  padding: 32/@r 0;
+}
+/*邀请规则*/
+.invitingRules{
+  margin-top: 25/@r;
+  margin-bottom: 40/@r;
+}
+.invitingRules img{
+  width: 174/@r;
+}
+.ruleList,.invitations{
+  padding: 0 40/@r;
+}
+.ruleList h3,.invitations h3{
+  font-size: 28/@r;
+  color: #666;
+  text-align: left;
+  margin-bottom: 16/@r;
+}
+.ruleList p,.invitations p{
+  font-size: 24/@r;
+  line-height:36/@r;
+  color: #999;
+  text-align: justify;
+  /*text-indent: 2em;*/
+}
+.invitations{
+  margin-top: 16/@r;
+}
+/*提示层*/
+.warn{
+  display: none;
+  width:587/@r;
+  height: 805/@r;
+  background: url("../img/warn-bg.png")no-repeat;
+  background-size: 587/@r 805/@r;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -294/@r;
+  margin-top: -400/@r;
+  z-index: 9992;
+}
+.warn h3{
+  font-size: 34/@r;
+  color: #fff;
+  text-align: center;
+  margin-top: 64/@r;
+}
+.solutions{
+  width:430/@r;
+  margin: 120/@r auto 0;
+}
+.solutions>p:nth-of-type(1){
+  margin-bottom: 20/@r;
+}
+.solutions ul{
+  margin-bottom: 20/@r;
+}
+.solutions p,.solutions ul li{
+  font-size: 30/@r;
+  color: #999;
+  line-height:46/@r;
+}
+.solutions ul li{
+  background: url("../img/shape.png")no-repeat center left;
+  background-size: 21/@r 21/@r;
+  padding-left: 40/@r;
+
+
+}
+.backBtn{
+  display: block;
+  width:380/@r;
+  height:80/@r;
+  border-radius:80/@r;
+  border: 1px solid #fff;
+  background: rgba(0,0,0,0);
+  margin: 114/@r auto 0;
+  font-size: 42/@r;
+  color: #fff;
+}
+
+/*遮罩*/
+.shade {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 9000;
+}
