@@ -9,8 +9,11 @@ $(function () {
     $('.backBtn').click(function () {
         $('.warn').hide();
         $('.shade').hide();
-    })
+    });
 
+    $('.enrollBtn').click(function () {
+
+    })
 
 
 
