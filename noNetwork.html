@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网络异常</title>
+    <script type="text/javascript">
+        !function () {
+            var html = document.documentElement;
+            var hWidth = html.getBoundingClientRect().width;
+            html.style.fontSize = hWidth / 15 + 'px';
+        }()
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 100vw;
+            height: 100vh;
+            background: url("img/redEnvelope-bg.png") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .content {
+            padding-top: 1.4rem;
+            text-align: center;
+        }
+
+        .content>img {
+            width: 14.7rem;
+        }
+
+        .content .main {
+            width: 13.8rem;
+            height: 22rem;
+            background: #fff;
+            margin: -0.4rem auto 0;
+        }
+
+        .content .main img {
+            width: 6.68rem;
+            margin-top: 3rem;
+        }
+
+        .content .main p {
+            font-size: 0.6rem;
+            color: #666;
+            margin-top: 0.6rem;
+        }
+
+        .main button {
+            width: 5.08rem;
+            height: 1.48rem;
+            border-radius: 1rem;
+            color: #fc9c2f;
+            border: 1px solid #fc9c2f;
+            background: rgba(0, 0, 0, 0);
+            font-size: 0.68rem;
+            outline: none;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content">
+            <img src="img/redEnvelope-head.png" alt="">
+            <div class="main">
+                <img src="img/noNetwork.png" alt="">
+                <p>网络异常，请检查网络~</p>
+                <button class="btn" type="button">刷新</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.btn').click(function () {
+            window.history.back(-1);
+        })
+    </script>
+</body>
+
+</html>

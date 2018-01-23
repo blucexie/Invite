@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/redEnvelope-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.content {
+  padding-top: 1.4rem;
+  text-align: center;
+}
+.content > img {
+  width: 14.7rem;
+}
+.content .main {
+  width: 13.8rem;
+  height: 22rem;
+  background: #fff;
+  margin: -0.4rem auto 0;
+}
+.content .main img {
+  width: 6.68rem;
+  margin-top: 3rem;
+}
+.content .main p {
+  font-size: 0.6rem;
+  color: #666;
+}
