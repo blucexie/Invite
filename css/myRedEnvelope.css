@@ -9,6 +9,9 @@ li {
 a {
   text-decoration: none;
 }
+th{
+  text-align: center;
+}
 .clearfix:after {
   content: "";
   display: block;
@@ -33,11 +36,4 @@ a {
   background: #fff;
   margin: -0.4rem auto 0;
 }
-.content .main img {
-  width: 6.68rem;
-  margin-top: 3rem;
-}
-.content .main p {
-  font-size: 0.6rem;
-  color: #666;
-}
+  
