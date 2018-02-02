@@ -9,13 +9,13 @@ li {
 a {
   text-decoration: none;
 }
-th{
-  text-align: center;
-}
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
+}
+th {
+  text-align: center;
 }
 .wrap {
   width: 100vw;
@@ -36,4 +36,9 @@ th{
   background: #fff;
   margin: -0.4rem auto 0;
 }
-  
+.pagination-detail {
+  margin-left: 20px;
+}
+.page-list {
+  display: none!important;
+}

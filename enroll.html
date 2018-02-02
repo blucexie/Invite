@@ -24,8 +24,8 @@
             <p>易职信（ezhixin.com）是一款致力于“让简历更加真实”的线上职业信息背调工具，隶属于北京风影职信科技有限公司，是国内首款在线实时核验应聘人员职业背景信息的职业信用风控平台。</p>
         </div>
         <form id="registry">
-            <input id="mobile" type="text" placeholder="请输入手机号" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="11"><br>
-            <input  id="mesCode" type="text" placeholder="请输入验证码" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="6">
+            <input id="mobile" type="text" name="resumeMobile" placeholder="请输入手机号" data-attribute="请填写正确的联系方式" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="11"><br>
+            <input  id="mesCode" type="text" name="validateCode" placeholder="请输入验证码" data-attribute="请填写正确的验证码" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="6">
             <span class="mesBtn">获取验证码</span><br>
             <img class="enrollBtn" src="img/enrollBtn.png" alt="">
             <p><span class="noCode">无法获取验证码？</span></p>
@@ -37,62 +37,62 @@
             <ul class="rankingList">
                 <li class="clearfix">
                     <div class="leftSide">
-                        <img src="img/logo.png" alt="">
+                        <img src=" " alt="">
                         <div class="companySide">
-                            <p class="company">风影科技</p>
-                            <p class="inviteCount">邀请<span>32</span>人</p>
+                            <p class="company"></p>
+                            <p class="inviteCount">邀请<span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span>899</span>元</p>
+                        <p>累计分红：<span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
                     <div class="leftSide">
-                        <img src="img/logo.png" alt="">
+                        <img src=" " alt="">
                         <div class="companySide">
-                            <p class="company">风影科技</p>
-                            <p class="inviteCount">邀请<span>32</span>人</p>
+                            <p class="company"></p>
+                            <p class="inviteCount">邀请<span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span>899</span>元</p>
+                        <p>累计分红：<span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
                     <div class="leftSide">
-                        <img src="img/logo.png" alt="">
+                        <img src=" " alt="">
                         <div class="companySide">
-                            <p class="company">风影科技</p>
-                            <p class="inviteCount">邀请<span>32</span>人</p>
+                            <p class="company"></p>
+                            <p class="inviteCount">邀请<span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span>899</span>元</p>
+                        <p>累计分红：<span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
                     <div class="leftSide">
-                        <img src="img/logo.png" alt="">
+                        <img src=" " alt="">
                         <div class="companySide">
-                            <p class="company">风影科技</p>
-                            <p class="inviteCount">邀请<span>32</span>人</p>
+                            <p class="company"></p>
+                            <p class="inviteCount">邀请<span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span>899</span>元</p>
+                        <p>累计分红：<span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
                     <div class="leftSide">
-                        <img src="img/logo.png" alt="">
+                        <img src=" " alt="">
                         <div class="companySide">
-                            <p class="company">风影科技</p>
-                            <p class="inviteCount">邀请<span>32</span>人</p>
+                            <p class="company"></p>
+                            <p class="inviteCount">邀请<span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span>899</span>元</p>
+                        <p>累计分红：<span></span>元</p>
                     </div>
                 </li>
             </ul>
@@ -136,8 +136,16 @@
     <!--遮罩-->
     <div class="shade">
     </div>
+     <div id="loading" class="loader-inner line-scale">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+     </div>
+ 
     <!--红包-->
-    <div class="redPackets">
+    <div class="redPackets animated bounceInDown">
         <img class="close" src="img/closed.png" alt="">
     </div>
 </body>

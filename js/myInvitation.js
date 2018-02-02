@@ -1,5 +1,4 @@
 $(function(){
-    
     var  inviteCode = sessionStorage.getItem("inviteCode");
     // 获取红包列表数据
         $.ajax({
@@ -7,8 +6,6 @@ $(function(){
             type: "POST",
             dataType:"json",
             data: JSON.stringify({
-                //pageStart: 0,
-               // pageSize: 20,
                 inviteCode:inviteCode
             }),
             success: function (data) {          
@@ -26,7 +23,8 @@ $(function(){
                         pageSize: 10, // 如果设置了分页，每页数据条数
                         pageNumber: 1, // 如果设置了分布，首页页码
                         paginationHAlign:'right',
-                
+                      //  sidePagination: "server", //分页方式：client客户端分页，server服务端分页（*）
+                    
                         columns: [{
                             field: 'agreeTime',
                             title: '时间',
@@ -69,6 +67,4 @@ $(function(){
                 });
             }
         });
-    
-    
 })
