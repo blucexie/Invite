@@ -7,12 +7,9 @@ $(function(){
             type: "POST",
             dataType:"json",
             data: JSON.stringify({
-                //pageStart: 0,
-               // pageSize: 20,
                 inviteCode:inviteCode
             }),
             success: function (data) {          
-                console.log(data)
                  var jsonData = JSON.parse(data['plaintext']);
                  var result = jsonData.item.result;
                  //返回填充数据
@@ -26,7 +23,6 @@ $(function(){
                         pageSize: 10, // 如果设置了分页，每页数据条数
                         pageNumber: 1, // 如果设置了分布，首页页码
                         paginationHAlign:'right',
-                
                         columns: [{
                             field: 'agreeTime',
                             title: '时间',

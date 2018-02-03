@@ -43,9 +43,10 @@ a {
 #registry input {
   outline: none;
   border: none;
+  padding-left: 0.52rem;
 }
 #mobile {
-  width: 12.52rem;
+  width: 12rem;
   height: 1.68rem;
   border-radius: 0.2rem;
   background: #fff url("../img/phone.png") no-repeat 0.6rem center;
@@ -53,7 +54,7 @@ a {
   text-indent: 3em;
 }
 #mesCode {
-  width: 7.72rem;
+  width: 7.2rem;
   height: 1.68rem;
   border-radius: 0.2rem;
   margin-top: 0.76rem;
@@ -79,8 +80,7 @@ a {
 }
 ::-webkit-input-placeholder {
   color: #666;
-  font-size: 0.6rem;
-  text-indent: 3em;
+  text-indent: 3.5em;
 }
 #registry > p {
   font-size: 0.4rem;
@@ -139,6 +139,7 @@ a {
   line-height: 0.4rem;
   margin-top: 0.12rem;
   color: #666;
+  text-align: left;
 }
 .rightSide {
   float: right;

@@ -2,18 +2,17 @@ $(function(){
     var  inviteCode = sessionStorage.getItem("inviteCode");
     // 获取红包列表数据
         $.ajax({
-            url:'https://apix.funinhr.com/api/get/invite/bonus/list',
+            url:'https://apix.funinhr.com/api/get/invite/list',
             type: "POST",
             dataType:"json",
             data: JSON.stringify({
                 inviteCode:inviteCode
             }),
             success: function (data) {          
-                console.log(data)
                  var jsonData = JSON.parse(data['plaintext']);
                  var result = jsonData.item.result;
                  //返回填充数据
-                 var inviteBonusList = jsonData.item.inviteBonusList;
+                 var inviteList = jsonData.item.inviteList;
                  //返回状态信息
                  var resultInfo = jsonData.item.resultInfo;
                 if(result===1001){
@@ -23,35 +22,22 @@ $(function(){
                         pageSize: 10, // 如果设置了分页，每页数据条数
                         pageNumber: 1, // 如果设置了分布，首页页码
                         paginationHAlign:'right',
-                      //  sidePagination: "server", //分页方式：client客户端分页，server服务端分页（*）
-                    
                         columns: [{
-                            field: 'agreeTime',
-                            title: '时间',
+                            field: 'inviteName',
+                            title: '姓名',
+                        }, {
+                            field: 'inviteBonusType',
+                            title: '邀请类型',
                             formatter: function (value, row, index) {
-                                if(value !=null){
-                                    if (value.toString().length >= 12) {
-                                        return value.toString().substring(0, 4) + "-" + value.toString().substring(4, 6) + "-" + value.toString().substring(6, 8) + "    " + value.toString().substring(8, 10) + ":" + value.toString().substring(10, 12)
-                                    } else if (value.toString().length >= 8) {
-                                        return value.toString().substring(0, 4) + "-" + value.toString().substring(4, 6) + "-" + value.toString().substring(6, 8)
-                                    }
-                                }else{
-                                    return "&nbsp;";
-                                }
+                                if (value == '2001') return '注册';
+                                else if(value == '2002')  return'认证';
+                                
                             }
                         }, {
                             field: 'inviteBonus',
-                            title: '金额'
-                        }, {
-                            field: 'inviteBonusType',
-                            title: '红包状态',
-                            formatter: function (value, row, index) {
-                                if (value == '2001') return '注册红包';
-                                else if(value == '2002')  return'邀请红包';
-                                
-                            }
+                            title: '贡献红包',
                         }],
-                        data: inviteBonusList
+                        data: inviteList
                     });
                 }else {
                     layer.open({
