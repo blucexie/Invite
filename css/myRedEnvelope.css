@@ -18,13 +18,14 @@ th {
   text-align: center;
 }
 .wrap {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background: url("../img/redEnvelope-bg.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: 15rem 24.12rem;
+  overflow: hidden;
 }
 .content {
-  padding-top: 1.4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.4rem;
   text-align: center;
 }
 .content > img {
@@ -32,9 +33,21 @@ th {
 }
 .content .main {
   width: 13.8rem;
-  height: 22rem;
+  height: 20.4rem;
   background: #fff;
   margin: -0.4rem auto 0;
+}
+.content .main img {
+  width: 6.68rem;
+  margin-top: 3rem;
+}
+.content .main p {
+  font-size: 0.6rem;
+  color: #666;
+  margin-top: 0.6rem;
+}
+.noData {
+  display: none;
 }
 .pagination-detail {
   margin-left: 20px;

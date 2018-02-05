@@ -13,6 +13,14 @@ $(function(){
                  var result = jsonData.item.result;
                  //返回填充数据
                  var inviteList = jsonData.item.inviteList;
+                 //判断显示几列数据
+                 var inviteBonusType = jsonData.item.inviteBonusType;
+                  //空数据
+                  var itemCount = jsonData.item.itemCount;
+                  if(itemCount==0){
+                      $('.noData').show();
+                      $('#exampleTable').hide()
+                  }
                  //返回状态信息
                  var resultInfo = jsonData.item.resultInfo;
                 if(result===1001){

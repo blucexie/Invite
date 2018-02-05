@@ -16,8 +16,8 @@ a {
 }
 .wrap {
   background: url("../img/invited-bg.jpg") no-repeat;
-  background-size: 100% ;
-  overflow: auto;
+  background-size: 15rem 60rem;
+  overflow: hidden;
 }
 .column {
   margin-top: 15.6rem;

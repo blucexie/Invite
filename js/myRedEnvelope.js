@@ -9,11 +9,18 @@ $(function(){
             data: JSON.stringify({
                 inviteCode:inviteCode
             }),
-            success: function (data) {          
+            success: function (data) {  
+                console.log(data)        
                  var jsonData = JSON.parse(data['plaintext']);
                  var result = jsonData.item.result;
                  //返回填充数据
                  var inviteBonusList = jsonData.item.inviteBonusList;
+                 //空数据
+                 var itemCount = jsonData.item.itemCount;
+                 if(itemCount==0){
+                     $('.noData').show();
+                     $('#exampleTable').hide();
+                 }
                  //返回状态信息
                  var resultInfo = jsonData.item.resultInfo;
                 if(result===1001){

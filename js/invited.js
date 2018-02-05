@@ -44,12 +44,30 @@ $(function() {
 
   //跳转到我的红包列表
   $(".redPacketBox").click(function() {
-    window.location.href = "myRedEnvelope.html";
+    if (navigator.onLine) {
+      //正常工作
+      window.location.href = "myRedEnvelope.html";
+    } else {
+      //执行离线状态时的任务
+      layer.open({
+        content: "网络异常，请稍后重试",
+        btn: "确定"
+      });
+    }
   });
 
   //跳转到我的邀请列表
   $(".inviteBox").click(function() {
-    window.location.href = "myInvitation.html";
+    if (navigator.onLine) {
+      //正常工作
+      window.location.href = "myInvitation.html";
+    } else {
+      //执行离线状态时的任务
+      layer.open({
+        content: "网络异常，请稍后重试",
+        btn: "确定"
+      });
+    }
   });
   //邀请排行榜
   $.ajax({
