@@ -112,10 +112,11 @@ a {
   width: 1.18rem;
   height: 1.18rem;
   margin: 0.3rem 0.4rem 0.3rem 0;
+  border-radius: 50%;
 }
 .companySide {
   float: left;
-  margin-top: 0.32rem;
+  margin-top: 0.4rem;
 }
 .company {
   font-size: 0.52rem;
@@ -164,7 +165,7 @@ a {
   line-height: 0.72rem;
   color: #999;
   text-align: justify;
-  text-indent: 2em;
+  padding-bottom: 0.1rem;
 }
 .invitations {
   margin-top: 0.12rem;

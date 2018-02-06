@@ -8,7 +8,8 @@ $(function(){
             data: JSON.stringify({
                 inviteCode:inviteCode
             }),
-            success: function (data) {          
+            success: function (data) {   
+                console.log(data)       
                  var jsonData = JSON.parse(data['plaintext']);
                  var result = jsonData.item.result;
                  //返回填充数据
@@ -34,17 +35,30 @@ $(function(){
                             field: 'inviteName',
                             title: '姓名',
                         }, {
-                            field: 'inviteBonusType',
-                            title: '邀请类型',
+                            field: 'EnterpriseRole',
+                            title: '类型',
                             formatter: function (value, row, index) {
-                                if (value == '2001') return '注册';
-                                else if(value == '2002')  return'认证';
+                                if (value == 2) return '个人认证';
+                                else if(value == 1)  return'企业认证';
+                                else if(value == null)  return'已注册';
                                 
                             }
                         }, {
+                            field: 'enterpriseAuthen',
+                            title: '认证状态',
+                            formatter: function (value, row, index) {
+                                if (value == 0) return '未认证';
+                                else if(value == 1)  return'已认证';
+                                else if(value == 2)  return'认证中';
+                                else if(value == 3)  return'认证失败';
+                                
+                            }
+                        },{
                             field: 'inviteBonus',
-                            title: '贡献红包',
-                        }],
+                            title: '红包钱数',
+                        }
+                    
+                    ],
                         data: inviteList
                     });
                 }else {

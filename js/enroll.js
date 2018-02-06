@@ -22,44 +22,45 @@ $(function() {
     $(".shade").hide();
   });
 
- //邀请排行榜
- $.ajax({
-  url:'https://apix.funinhr.com/api/get/invite/ranking/config',
-  type: "POST",
-  dataType:"json",
-  success: function (data) {          
-     // console.log(data)
-       var jsonData = JSON.parse(data['plaintext']);
-       var result = jsonData.item.result;
-       var inviteRankingList = jsonData.item.inviteRankingList;
-      if(result===1001){
-      $('.rankingList li').each(function(index,item){
-          $(this).find('.leftSide>img').attr("src",inviteRankingList[index].enterpriseLogo);
-          $(this).find('.company').text(inviteRankingList[index].enteroriseName)
-          $(this).find('.inviteCount').text(inviteRankingList[index].inviteNum)
-          $(this).find('.rightSide p span').text(inviteRankingList[index].inviteBonusTotal)
-      })
-      }else {
-          layer.open({
-              content: resultInfo
-              ,btn: '确定'
-          });
+  //邀请排行榜
+  $.ajax({
+    url: "https://apix.funinhr.com/api/get/invite/ranking/config",
+    type: "POST",
+    dataType: "json",
+    success: function(data) {
+      // console.log(data)
+      var jsonData = JSON.parse(data["plaintext"]);
+      var result = jsonData.item.result;
+      var inviteRankingList = jsonData.item.inviteRankingList;
+      if (result === 1001) {
+        $(".rankingList li").each(function(index, item) {
+          $(this)
+            .find(".leftSide>img")
+            .attr("src", inviteRankingList[index].enterpriseLogo);
+          $(this)
+            .find(".company")
+            .text(inviteRankingList[index].enteroriseName);
+          $(this)
+            .find(".inviteCount")
+            .text(inviteRankingList[index].inviteNum);
+          $(this)
+            .find(".rightSide p span")
+            .text(inviteRankingList[index].inviteBonusTotal);
+        });
+      } else {
+        layer.open({
+          content: resultInfo,
+          btn: "确定"
+        });
       }
-  },
-  error: function () {
+    },
+    error: function() {
       layer.open({
-          content: '网络异常，请稍后重试'
-          ,btn: '确定'
+        content: "网络异常，请稍后重试",
+        btn: "确定"
       });
-  }
-});
-
-
-
-
-
-
-
+    }
+  });
 
   /*发送验证码*/
   $(".mesBtn").click(function() {
@@ -76,8 +77,7 @@ $(function() {
       if (isValidPhone(mobile)) {
         showLoader();
         $.ajax({
-          url:
-            "https://apix.funinhr.com/api/invite/send/RegisterSMS",
+          url: "https://apix.funinhr.com/api/invite/send/RegisterSMS",
           type: "POST",
           timeout: 5000,
           dataType: "json",
@@ -151,6 +151,9 @@ $(function() {
       if (itemName == "validateCode") {
         itemPass = itemVal.length == 6;
       }
+      if (itemName == "passWord") {
+        itemPass = itemVal.length >= 6 && itemVal.length <= 16;
+      }
 
       if (!itemPass) {
         inputObject = $(this);
@@ -173,6 +176,7 @@ $(function() {
 
     var mobile = $("#mobile").val();
     var validateCode = $("#mesCode").val();
+    var loginPwd = $("#passWord").val();
     // 显示遮罩
     showLoader();
     $.ajax({
@@ -182,6 +186,7 @@ $(function() {
       data: JSON.stringify({
         mobile: mobile,
         validateCode: validateCode,
+        loginPwd: loginPwd,
         userCode: userCode
       }),
       success: function(data) {
@@ -218,9 +223,6 @@ $(function() {
     $(".redPackets").hide();
     hideLoader();
   });
-
-
-  
 });
 
 //验证码发送倒计数

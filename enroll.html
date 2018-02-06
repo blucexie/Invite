@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/enroll.css">
-    
-     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-     <script type="text/javascript" src="layer_mobile/layer.js"></script>
-     <script type="text/javascript" src="js/enroll.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="layer_mobile/layer.js"></script>
+    <script type="text/javascript" src="js/enroll.js"></script>
     <script type="text/javascript">
-        !function () {
+        ! function () {
             var html = document.documentElement;
             var hWidth = html.getBoundingClientRect().width;
-            html.style.fontSize=hWidth/15+'px';
+            html.style.fontSize = hWidth / 15 + 'px';
         }()
     </script>
 </head>
+
 <body>
     <div class="wrap">
         <div class="header">
             <p>易职信（ezhixin.com）是一款致力于“让简历更加真实”的线上职业信息背调工具，隶属于北京风影职信科技有限公司，是国内首款在线实时核验应聘人员职业背景信息的职业信用风控平台。</p>
         </div>
         <form id="registry">
-            <input id="mobile" type="text" name="resumeMobile" placeholder="请输入手机号" data-attribute="请填写正确的联系方式" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="11"><br>
-            <input  id="mesCode" type="text" name="validateCode" placeholder="请输入验证码" data-attribute="请填写正确的验证码" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="6">
-            <span class="mesBtn">获取验证码</span><br>
+            <input id="mobile" type="text" name="resumeMobile" placeholder="请输入手机号" data-attribute="请填写正确的联系方式" onkeyup="value=value.replace(/[^\d]/g,'') "
+                maxlength="11">
+            <br>
+            <input id="mesCode" type="text" name="validateCode" placeholder="请输入验证码" data-attribute="请填写正确的验证码" onkeyup="value=value.replace(/[^\d]/g,'') "
+                maxlength="6">
+            <span class="mesBtn">获取验证码</span>
+            <br>
+            <input type="password" id="passWord" name="passWord" placeholder="设置密码" data-attribute="请设置6到16位密码" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"
+                minlength="6" maxlength="16">
             <img class="enrollBtn" src="img/enrollBtn.png" alt="">
-            <p><span class="noCode">无法获取验证码？</span></p>
+            <p>
+                <span class="noCode">无法获取验证码？</span>
+            </p>
         </form>
         <div class="ranking">
             <div class="rankTitle">
@@ -40,11 +49,13 @@
                         <img src=" " alt="">
                         <div class="companySide">
                             <p class="company"></p>
-                            <p class="inviteCount">邀请<span></span>人</p>
+                            <p class="inviteCount">邀请
+                                <span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span></span>元</p>
+                        <p>累计分红：
+                            <span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
@@ -52,11 +63,13 @@
                         <img src=" " alt="">
                         <div class="companySide">
                             <p class="company"></p>
-                            <p class="inviteCount">邀请<span></span>人</p>
+                            <p class="inviteCount">邀请
+                                <span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span></span>元</p>
+                        <p>累计分红：
+                            <span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
@@ -64,11 +77,13 @@
                         <img src=" " alt="">
                         <div class="companySide">
                             <p class="company"></p>
-                            <p class="inviteCount">邀请<span></span>人</p>
+                            <p class="inviteCount">邀请
+                                <span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span></span>元</p>
+                        <p>累计分红：
+                            <span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
@@ -76,11 +91,13 @@
                         <img src=" " alt="">
                         <div class="companySide">
                             <p class="company"></p>
-                            <p class="inviteCount">邀请<span></span>人</p>
+                            <p class="inviteCount">邀请
+                                <span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span></span>元</p>
+                        <p>累计分红：
+                            <span></span>元</p>
                     </div>
                 </li>
                 <li class="clearfix">
@@ -88,11 +105,13 @@
                         <img src=" " alt="">
                         <div class="companySide">
                             <p class="company"></p>
-                            <p class="inviteCount">邀请<span></span>人</p>
+                            <p class="inviteCount">邀请
+                                <span></span>人</p>
                         </div>
                     </div>
                     <div class="rightSide">
-                        <p>累计分红：<span></span>元</p>
+                        <p>累计分红：
+                            <span></span>元</p>
                     </div>
                 </li>
             </ul>
@@ -101,16 +120,16 @@
             </div>
             <div class="ruleList">
                 <h3>奖励规则:</h3>
-                <p>1.属于您的专属链接邀请好友注册并认证易职信，好友认证完成后，会给您和您的好友相
-                    应的奖励；邀约奖励会在实名认证通过后第二天16:00统一发放。</p>
-                <p>2.如果您不是实名认证用户，您邀请的好友是认证通过后的奖励会发放到您的钱包中，您需要实名认
-                    证后才能使用</p>
+                <p>1.属于您的专属链接邀请好友注册并认证易职信，好友认证完成后，会给您和您的好友相 应的奖励；邀约奖励会在实名认证通过后第二天16:00统一发放。
+                </p>
+                <p>2.如果您不是实名认证用户，您邀请的好友是认证通过后的奖励会发放到您的钱包中，您需要实名认 证后才能使用
+                </p>
             </div>
             <div class="invitations">
                 <h3>邀约关系:</h3>
                 <p>1.邀约关系是永久性且不可逆</p>
-                <p>B通过A分享的链接注册并认证后，A邀约B的关系成立且永久有效，且A不能再通过B分享的链接注册
-                    且认证易职信</p>
+                <p>B通过A分享的链接注册并认证后，A邀约B的关系成立且永久有效，且A不能再通过B分享的链接注册 且认证易职信
+                </p>
                 <p>2.一个用户最多只能被一个好友邀请，但可以同时邀请多个好友注册并认证易职信</p>
                 <p>3.邀约关系不可传递</p>
                 <p>用户A邀请了B，B邀请了C，C不是A的被邀请者。</p>
@@ -136,17 +155,18 @@
     <!--遮罩-->
     <div class="shade">
     </div>
-     <div id="loading" class="loader-inner line-scale">
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-         <div></div>
-     </div>
- 
+    <div id="loading" class="loader-inner line-scale">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
     <!--红包-->
     <div class="redPackets animated bounceInDown">
         <img class="close" src="img/closed.png" alt="">
     </div>
 </body>
+
 </html>

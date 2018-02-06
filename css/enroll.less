@@ -27,8 +27,8 @@ a{
 
 }
 .header p{
-  font-size: 20/@r;
-  line-height:30/@r;
+  font-size: 24/@r;
+  line-height:32/@r;
   color: #fe9d23;
   padding: 48/@r 45/@r 0;
   text-align: justify;
@@ -42,15 +42,21 @@ a{
   outline: none;
   border: none;
   padding-left: 26/@r;
+  font-size: 26/@r;
 }
 
-#mobile{
+#mobile,#passWord{
   width:600/@r;
   height:84/@r;
   border-radius: 10/@r;
   background:#fff url("../img/phone.png")no-repeat 30/@r center ;
   background-size:38/@r 42/@r ;
   text-indent: 3em;
+}
+#passWord{
+  background:#fff url("../img/password.png")no-repeat 30/@r center ;
+  background-size:38/@r 42/@r ;
+  margin-top: 40/@r;
 }
 #mesCode{
   width:360/@r;
@@ -91,6 +97,7 @@ a{
 #registry>p span{
   padding-bottom: 1px;
   border-bottom: 1px solid #fff;
+  padding-left: 10/@r;
 }
 
 /*邀请排行*/
@@ -126,6 +133,7 @@ a{
   width: 59/@r;
   height:59/@r;
   margin: 15/@r 20/@r 15/@r 0;
+  border-radius: 50%;
 }
 .companySide{
   float: left;

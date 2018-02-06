@@ -48,11 +48,11 @@ $(function(){
                             field: 'inviteBonus',
                             title: '金额'
                         }, {
-                            field: 'inviteBonusType',
+                            field: 'inviteBonusStatus',
                             title: '红包状态',
                             formatter: function (value, row, index) {
-                                if (value == '2001') return '注册红包';
-                                else if(value == '2002')  return'邀请红包';
+                                if (value == 1) return '已到账';
+                                else if(value == 0)  return'未到账';
                                 
                             }
                         }],

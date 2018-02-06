@@ -47,6 +47,7 @@ $(function() {
     if (navigator.onLine) {
       //正常工作
       window.location.href = "myRedEnvelope.html";
+      alert(true)
     } else {
       //执行离线状态时的任务
       layer.open({
@@ -75,7 +76,6 @@ $(function() {
     type: "POST",
     dataType: "json",
     success: function(data) {
-      console.log(data);
       var jsonData = JSON.parse(data["plaintext"]);
       var result = jsonData.item.result;
       var inviteRankingList = jsonData.item.inviteRankingList;
