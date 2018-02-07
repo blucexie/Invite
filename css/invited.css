@@ -82,9 +82,9 @@ a {
 /*邀请排行*/
 .ranking {
   width: 12.34rem;
-  height: 31.28rem;
-  background: url("../img/rule_frame.png") no-repeat;
-  background-size: 12.34rem 31.28rem;
+  height: 34rem;
+  background: url("../img/revised_frame.png") no-repeat;
+  background-size: 12.34rem 34rem;
   margin: 0.32rem auto 2.4rem;
   text-align: center;
 }
@@ -100,19 +100,24 @@ a {
 .rankingList li {
   width: 11.16rem;
   background-color: #eee;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   margin: 0 auto 0.36rem;
 }
-.leftSide {
+.rankingList .right {
   float: left;
-  margin-left: 0.48rem;
+  padding: 0.2rem 0;
+  margin-left: 1rem;
 }
-.leftSide > img {
+.rankingList .right p {
+  line-height: 0.68rem;
+}
+.rankingList li > img {
   float: left;
-  width: 1.18rem;
-  height: 1.18rem;
-  margin: 0.3rem 0.4rem 0.3rem 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: 0.52rem;
   border-radius: 50%;
+  margin-left: 0.8rem;
 }
 .companySide {
   float: left;
@@ -122,23 +127,19 @@ a {
   font-size: 0.52rem;
   line-height: 0.52rem;
   color: #333;
+  text-align: left;
 }
 .inviteCount {
   font-size: 0.4rem;
   line-height: 0.4rem;
-  margin-top: 0.12rem;
   color: #666;
   text-align: left;
 }
-.rightSide {
-  float: right;
-  margin-right: 0.44rem;
-}
-.rightSide p {
-  font-size: 0.52rem;
-  line-height: 0.52rem;
+.bonus {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
   color: #fe4646;
-  padding: 0.64rem 0;
+  text-align: left;
 }
 /*邀请规则*/
 .invitingRules {

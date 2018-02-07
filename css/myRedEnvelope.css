@@ -20,8 +20,9 @@ th {
 .wrap {
   width: 100%;
   background: url("../img/redEnvelope-bg.png") no-repeat;
-  background-size: 15rem 24.12rem;
+  background-size: 15rem 27.1rem;
   overflow: hidden;
+  padding-bottom: 0.4rem;
 }
 .content {
   padding-top: 1.6rem;

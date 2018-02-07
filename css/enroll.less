@@ -103,9 +103,9 @@ a{
 /*邀请排行*/
 .ranking{
   width:617/@r;
-  height:1564/@r;
-  background: url("../img/rule_frame.png")no-repeat;
-  background-size: 617/@r 1564/@r;
+  height:1700/@r;
+  background: url("../img/revised_frame.png")no-repeat;
+  background-size: 617/@r 1700/@r;
   margin: 40/@r auto 120/@r;
   text-align: center;
 }
@@ -121,19 +121,30 @@ a{
 .rankingList li{
   width:558/@r;
   background-color: #eee;
-  border-radius: 30/@r;
+  border-radius: 20/@r;
   margin: 0 auto 18/@r;
 }
-.leftSide{
+.rankingList .right{
   float: left;
+  padding: 10/@r 0;
+  margin-left: 50/@r;
+}
+.rankingList .right p{
+  line-height: 34/@r;;
+}
+.leftSide{
+ // float: left;
   margin-left: 24/@r;
 }
-.leftSide>img{
+.rankingList li>img{
   float: left;
-  width: 59/@r;
-  height:59/@r;
-  margin: 15/@r 20/@r 15/@r 0;
+  width: 70/@r;
+  height:70/@r;
+  //margin: 15/@r 20/@r 15/@r 0;
+  // vertical-align: middle;
+  margin-top: 26/@r;
   border-radius: 50%;
+  margin-left:40/@r;
 }
 .companySide{
   float: left;
@@ -143,23 +154,25 @@ a{
   font-size: 26/@r;
   line-height:26/@r;
   color: #333;
+  text-align: left;
 }
 .inviteCount{
   font-size: 20/@r;
   line-height:20/@r;
-  margin-top: 6/@r;
   color: #666;
   text-align: left;
 }
 .rightSide{
-  float: right;
+ // float: right;
   margin-right: 22/@r;
+  text-align: left;
+  padding-left: 100/@r;
 }
-.rightSide p{
-  font-size: 26/@r;
-  line-height:26/@r;
+.bonus{
+  font-size: 20/@r;
+  line-height:20/@r;
   color: #fe4646;
-  padding: 32/@r 0;
+  text-align: left;
 }
 /*邀请规则*/
 .invitingRules{
@@ -248,13 +261,14 @@ a{
   display: none;
   width: 718/@r;
   height: 1261/@r;
-  background: url("../img/redPackets.png");
-  background-size: 718/@r 1261/@r;
   position: fixed;
   top: 0;
   left: 50%;
   margin-left: -359/@r;
   z-index: 9999;
+}
+.redPacketsImg{
+  width: 718/@r;
 }
 .close{
   width: 40/@r;

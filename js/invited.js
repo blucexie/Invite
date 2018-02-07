@@ -12,6 +12,7 @@ $(function() {
   $.ajax({
     url: "https://apix.funinhr.com/api/get/invite/info",
     type: "POST",
+    timeout:5000,
     dataType: "json",
     data: JSON.stringify({
       userCode: userCode
@@ -50,10 +51,7 @@ $(function() {
       alert(true)
     } else {
       //执行离线状态时的任务
-      layer.open({
-        content: "网络异常，请稍后重试",
-        btn: "确定"
-      });
+      window.location.href ="noNetwork.html"
     }
   });
 
@@ -62,12 +60,10 @@ $(function() {
     if (navigator.onLine) {
       //正常工作
       window.location.href = "myInvitation.html";
+      alert(true)
     } else {
       //执行离线状态时的任务
-      layer.open({
-        content: "网络异常，请稍后重试",
-        btn: "确定"
-      });
+      window.location.href ="noNetwork.html"
     }
   });
   //邀请排行榜
@@ -84,16 +80,16 @@ $(function() {
       if (result === 1001) {
         $(".rankingList li").each(function(index, item) {
           $(this)
-            .find(".leftSide>img")
+            .find("img")
             .attr("src", inviteRankingList[index].enterpriseLogo);
           $(this)
             .find(".company")
             .text(inviteRankingList[index].enteroriseName);
           $(this)
-            .find(".inviteCount")
+            .find(".inviteCount span")
             .text(inviteRankingList[index].inviteNum);
           $(this)
-            .find(".rightSide p span")
+            .find(".bonus span")
             .text(inviteRankingList[index].inviteBonusTotal);
         });
       } else {

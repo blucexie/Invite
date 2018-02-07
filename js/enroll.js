@@ -35,16 +35,16 @@ $(function() {
       if (result === 1001) {
         $(".rankingList li").each(function(index, item) {
           $(this)
-            .find(".leftSide>img")
+            .find("img")
             .attr("src", inviteRankingList[index].enterpriseLogo);
           $(this)
             .find(".company")
             .text(inviteRankingList[index].enteroriseName);
           $(this)
-            .find(".inviteCount")
+            .find(".inviteCount span")
             .text(inviteRankingList[index].inviteNum);
           $(this)
-            .find(".rightSide p span")
+            .find(".bonus span")
             .text(inviteRankingList[index].inviteBonusTotal);
         });
       } else {
@@ -123,7 +123,6 @@ $(function() {
       }
     }
   });
-
   // 点击注册
   $(".enrollBtn").click(function() {
     var basicPass = true;
@@ -152,7 +151,7 @@ $(function() {
         itemPass = itemVal.length == 6;
       }
       if (itemName == "passWord") {
-        itemPass = itemVal.length >= 6 && itemVal.length <= 16;
+        itemPass = isPassWord(itemVal);
       }
 
       if (!itemPass) {
@@ -200,6 +199,10 @@ $(function() {
           $(".redPackets")
             .addClass("animated bounceInDown")
             .show();
+            $('html,body').css({
+              height:'100%',
+              overflow:'hidden'
+            })
         } else {
           layer.open({
             content: resultInfo,
@@ -222,6 +225,10 @@ $(function() {
   $(".close").click(function() {
     $(".redPackets").hide();
     hideLoader();
+    $('html,body').css({
+      height:'auto',
+      overflow:'auto'
+    })
   });
 });
 
@@ -246,6 +253,11 @@ function countDown() {
 function isValidPhone(mobile) {
   var re = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|19[0-9]|14[57])[0-9]{8}$/;
   return re.test(mobile);
+}
+//校验密码
+function isPassWord(passWord){
+  var pw = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+  return pw.test(passWord);
 }
 //显示loading
 function showLoader() {
