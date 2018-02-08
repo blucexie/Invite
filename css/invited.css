@@ -167,6 +167,14 @@ a {
   color: #999;
   text-align: justify;
   padding-bottom: 0.1rem;
+  padding-left: 0.6rem;
+}
+.ruleList div span,
+.invitations div span {
+  float: left;
+  font-size: 0.48rem;
+  color: #999;
+  margin-top: 0.08rem;
 }
 .invitations {
   margin-top: 0.12rem;

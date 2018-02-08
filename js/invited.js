@@ -59,6 +59,7 @@ $(function() {
   $(".inviteBox").click(function() {
     if (navigator.onLine) {
       //正常工作
+      
       window.location.href = "myInvitation.html";
       alert(true)
     } else {
