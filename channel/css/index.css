@@ -10,7 +10,7 @@ li {
   width: 100vw;
   height: 100vh;
   background: url(../img/channelBg.png) no-repeat;
-  background-size: 10rem 17.453333rem;
+  background-size: 15rem 26.18rem;
   padding-top: 0.1px;
 }
 .header {
@@ -74,10 +74,6 @@ li {
   border-radius: 0.12rem;
   margin-left: 0.36rem;
 }
-/*  .enrollBtn{
-    width:635/@r;
-    margin-top: 40/@r;
-  } */
 .enrollBtn {
   width: 12.7rem;
   height: 1.88rem;
