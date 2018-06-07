@@ -6,7 +6,7 @@ $(function () {
         if (r != null) return unescape(r[2]);
         return null;
     }
-    var userCode = getQueryString("userCode");
+    var channel = getQueryString("uc");
 
     $(".noCode").click(function() {
         $(".warn")
@@ -137,20 +137,20 @@ $(function () {
         // 显示遮罩
         showLoader();
         $.ajax({
-            url: "https://apix.funinhr.com/api/invite/sms/register",
+            url: "https://apix.funinhr.com/api/channel/sms/register",
             type: "POST",
             dataType: "json",
             data: JSON.stringify({
                 mobile: mobile,
                 validateCode: validateCode,
                 loginPwd: loginPwd,
-                userCode: userCode
+                channel: channel
             }),
             success: function (data) {
-                console.log(data);
-                var jsonData = JSON.parse(data["plaintext"]);
-                var result = jsonData.item.result;
-                var resultInfo = jsonData.item.resultInfo;
+                var plaintext = JSON.parse(data.plaintext);
+                var item = plaintext.item;
+                var result = item.result;
+                var resultInfo = item.resultInfo;
                 if (result === 1001) {
                     $("#loading").hide();
                     $(".shade").show();

@@ -28,7 +28,6 @@ $(function() {
     type: "POST",
     dataType: "json",
     success: function(data) {
-      // console.log(data)
       var jsonData = JSON.parse(data["plaintext"]);
       var result = jsonData.item.result;
       var inviteRankingList = jsonData.item.inviteRankingList;

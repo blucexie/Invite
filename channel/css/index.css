@@ -10,7 +10,7 @@ li {
   width: 100vw;
   height: 100vh;
   background: url(../img/channelBg.png) no-repeat;
-  background-size: cover;
+  background-size: 10rem 17.453333rem;
   padding-top: 0.1px;
 }
 .header {
@@ -167,4 +167,25 @@ li {
   background: #000;
   opacity: 0.7;
   z-index: 9000;
+}
+/*红包*/
+.redPackets {
+  display: none;
+  width: 14.36rem;
+  height: 25.22rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -7.18rem;
+  z-index: 9999;
+}
+.redPacketsImg {
+  width: 14.36rem;
+}
+.close {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
 }
