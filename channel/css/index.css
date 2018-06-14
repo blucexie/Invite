@@ -15,18 +15,29 @@ li {
 }
 .header {
   width: 12.64rem;
-  height: 4.08rem;
+  height: 4.68rem;
   background-color: #fff;
   border-radius: 0.2rem;
   margin: 7.46rem auto 0.92rem;
   box-shadow: 0 0 0.4rem #d99805;
+  padding-top: 0.1px;
+}
+.header > h2 {
+  color: #fe9d23;
+  font-size: 0.6rem;
+  margin-left: 0.9rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 .header p {
   font-size: 0.48rem;
   line-height: 0.64rem;
   color: #fe9d23;
-  padding: 0.96rem 0.9rem 0;
+  padding: 0 0.9rem 0;
   text-align: justify;
+}
+.header p b {
+  font-size: 0.56rem;
 }
 /*注册信息*/
 #registry {
