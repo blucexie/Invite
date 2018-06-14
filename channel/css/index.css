@@ -15,7 +15,7 @@ li {
 }
 .header {
   width: 12.64rem;
-  height: 4.68rem;
+  height: 4.28rem;
   background-color: #fff;
   border-radius: 0.2rem;
   margin: 7.46rem auto 0.92rem;
@@ -25,15 +25,15 @@ li {
 .header > h2 {
   color: #fe9d23;
   font-size: 0.6rem;
-  margin-left: 0.9rem;
+  margin-left: 0.28rem;
   margin-top: 0.4rem;
   margin-bottom: 0.2rem;
 }
 .header p {
   font-size: 0.48rem;
-  line-height: 0.64rem;
+  line-height: 0.8rem;
   color: #fe9d23;
-  padding: 0 0.9rem 0;
+  padding: 0 0.2rem 0;
   text-align: justify;
 }
 .header p b {
