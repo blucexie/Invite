@@ -136,9 +136,12 @@ $(function () {
         var loginPwd = $("#passWord").val();
         // 显示遮罩
         showLoader();
+        $(".enrollBtn").attr('disabled',true);
+        $('#loading').show();
         $.ajax({
             url: "https://apix.funinhr.com/api/channel/sms/register",
             type: "POST",
+            timeout:5000,
             dataType: "json",
             data: JSON.stringify({
                 mobile: mobile,
@@ -147,6 +150,7 @@ $(function () {
                 channel: channel
             }),
             success: function (data) {
+                $(".enrollBtn").removeAttr('disabled')
                 var plaintext = JSON.parse(data.plaintext);
                 var item = plaintext.item;
                 var result = item.result;
@@ -175,6 +179,7 @@ $(function () {
                     btn: "确定"
                 });
                 hideLoader();
+                $(".enrollBtn").removeAttr('disabled');
             }
         });
     });
